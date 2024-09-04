@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { format } from "date-fns";
+
 import "../styles/NotificationIcon.scss";
 import { useState } from "react";
 
@@ -28,7 +28,8 @@ const NotificationDropdown = ({ events }) => {
             showAlert && (
               <div key={event.id} className="notification-item">
                 <span>{event.title}</span>
-                <span>{format(new Date(event.date), "MMM d, yyyy")}</span>
+                <br />
+                <span>{new Date(event.date).toDateString()}</span>
               </div>
             )
         )}

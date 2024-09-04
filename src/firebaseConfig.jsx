@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAui9nlFW8Pxet_NOZNgIHv_OP8C4LigD0",
+  apiKey: import.meta.env.VITE_API_KEY,
   authDomain: "event-management-d3ca1.firebaseapp.com",
   projectId: "event-management-d3ca1",
   storageBucket: "event-management-d3ca1.appspot.com",
