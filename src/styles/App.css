@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f4f4f4; */
+}
+
+.login-page,
+.register-page,
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+  justify-content: center;
+  height: 100vh;
+}
+
+input,
+textarea {
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+  }
+}
+
+.error {
+  color: red;
+}
+
+.event-calendar {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.notification-dropdown {
+  position: relative;
+}
+
+.notification-icon {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.notification-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notification-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
